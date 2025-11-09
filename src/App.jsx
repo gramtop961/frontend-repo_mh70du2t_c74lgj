@@ -1,13 +1,16 @@
 import React from 'react';
-import HeroSpline from './components/HeroSpline';
+import HeroCoverSpline from './components/HeroCoverSpline';
 import SlideSection from './components/SlideSection';
 import StatsGrid from './components/StatsGrid';
 import Footer from './components/Footer';
+import AdoptionTimeline from './components/AdoptionTimeline';
+import CognitiveGapChart from './components/CognitiveGapChart';
+import RolesDiagram from './components/RolesDiagram';
 
 const App = () => {
   return (
     <div className="min-h-screen w-full bg-black font-inter text-white">
-      <HeroSpline />
+      <HeroCoverSpline />
 
       <div className="space-y-4">
         <SlideSection
@@ -24,6 +27,7 @@ const App = () => {
             'Humans are not adapted for exponential speed',
           ]}
         />
+        <AdoptionTimeline />
 
         <SlideSection
           id="slide-3"
@@ -39,6 +43,7 @@ const App = () => {
             'Cognitive Gap: AI outpaces human learning → tools surpass mastered human skills',
           ]}
         />
+        <CognitiveGapChart />
 
         <SlideSection
           id="slide-4"
@@ -96,6 +101,7 @@ const App = () => {
             'Builders → Supervisors',
           ]}
         />
+        <RolesDiagram />
 
         <SlideSection
           id="slide-8"
